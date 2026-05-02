@@ -1,0 +1,22 @@
+# Environment variables
+.env*.local
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and framework output
+.next/
+out/
+dist/
+build/
+
+# Logs and local system files
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+firmware/exercises/
+.vscode/
