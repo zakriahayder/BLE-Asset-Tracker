@@ -52,7 +52,7 @@ static const uint8_t RESP_ERROR = 0x13;
 static const uint8_t ERR_NO_TAG = 0x02;
 static const uint8_t ERR_UNKNOWN_CMD = 0xEE;
 
-static const size_t MAX_NOTIFY_SIZE = 180;
+static const size_t MAX_NOTIFY_SIZE = 280;
 
 // state machine
 enum State
@@ -472,8 +472,6 @@ void sendScanResult()
 
     dataChar.notify(pkt, o);
 }
-
-// --- BLE callback ---
 
 void onUserInput(uint16_t conn_hdl, BLECharacteristic *chr,
                  uint8_t *data, uint16_t len)
